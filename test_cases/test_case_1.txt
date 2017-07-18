@@ -1,0 +1,4 @@
+1
+all x.A(x)
+1
+exists x.A(x)

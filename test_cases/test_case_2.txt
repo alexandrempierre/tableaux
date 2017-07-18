@@ -1,0 +1,9 @@
+2
+all x.(A(x) & B(x))
+2
+all x.A(x)
+all y.B(y)
+exists x.(A(x) & B(x))
+2
+exists x.A(x)
+exists y.B(y)

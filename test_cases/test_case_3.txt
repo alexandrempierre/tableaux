@@ -1,0 +1,21 @@
+5
+
+all x.(-A(x))
+1
+-(exists x.A(x))
+
+-(exists x.A(x))
+1
+all x.(-A(x))
+
+exists x.(-A(x))
+1
+all x.(-A(x))
+
+-(all x.A(x))
+1
+-(exists x.A(x))
+
+-(all x.A(x))
+1
+exists x.(-A(x))

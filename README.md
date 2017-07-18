@@ -16,6 +16,7 @@ O arquivo a ser executado deve ser o main.py que já está pronto para execuçã
 * Biblioteca `nltk`
 
 	O `nltk` foi escolhido pelo seu _parser_. Mas por mais completo que seja o parser do `nltk`, apenas uma parte dele vai ser usado. As únicas operações reconhecidas nesse programa são conjunção, disjunção, negação unária, implicação e os quantificadores existencial e universal. Essas operações podem ser feitas entre fórmulas, ou seja, podem aparecer umas dentro das outras (de uma forma um tanto específica). No código do programa não há menção a palavra "literal", optei por seguir o padrão e chamar de átomo negado ou `n_atom` no contexto.
+
 	O parser do nltk reconhece outras operações como o "se e somente se", no caso de operações como essa o comportamento do Tableaux não está garantido, pois não foi feito tendo essa operação em mente, nem nenhuma outra que não tenha sido citada no parágrafo anterior.
 
 ## Como utilizar

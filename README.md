@@ -21,6 +21,8 @@ O arquivo a ser executado deve ser o main.py que já está pronto para execuçã
 
 ## Como utilizar
 
+Para detalhes de como escrever as sentenças lógicas no `nltk`, a página mais direta que encontrei foi [essa](http://www.nltk.org/howto/logic.html).
+
 Após instalar o `Python 3` e a biblioteca `nltk`, basta atribuir ao seu usuário a permissão de execução sobre o arquivo `main.py` e executá-lo.
 
 	$ chmod a+x main.py 	// permite que qualquer usuário execute o arquivo

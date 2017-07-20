@@ -6,13 +6,19 @@ Por questão de conforto em relação ao material e ao código que foi lido para
 
 O arquivo a ser executado deve ser o main.py que já está pronto para execução por linha de comando no Linux (a menos de um chmod) (a main.py tem shebang).
 
-## Tecnologias
+## Tecnologias utilizadas
 
+### Desenvolvido com:
+
+* Atom
 * Arch Linux
+* Tilix
+* Git
+* Github
 
 ### Dependências:
 
-* Python 3.1.6
+* Python 3.6.1
 * Biblioteca `nltk`
 
 	O `nltk` foi escolhido pelo seu _parser_. Mas por mais completo que seja o parser do `nltk`, apenas uma parte dele vai ser usado. As únicas operações reconhecidas nesse programa são conjunção, disjunção, negação unária, implicação e os quantificadores existencial e universal. Essas operações podem ser feitas entre fórmulas, ou seja, podem aparecer umas dentro das outras (de uma forma um tanto específica). No código do programa não há menção a palavra "literal", optei por seguir o padrão e chamar de átomo negado ou `n_atom` no contexto.
@@ -27,16 +33,16 @@ Após instalar o `Python 3` e a biblioteca `nltk`, basta atribuir ao seu usuári
 
 	$ chmod a+x main.py 	// permite que qualquer usuário execute o arquivo
 
-Há duas formas possíveis de usar o `tableaux`: 
+Há duas formas possíveis de usar o `tableaux`:
 
 * Passando um arquivo (caminho relativo ou completo) como argumento de linha de comando para ao rodar o programa:
-	
+
 	```
 	$ ./main.py <nome do arquivo>
 	```
 
 * Passando os tableauxs a serem resolvidos para o programa durante sua execução
-	
+
 	```
 	$ ./main.py
 	```
@@ -59,9 +65,8 @@ As partes 2, 3 e 4 se repetirão de acordo com o valor digitado no passo 1.
 A(a)
 1
 A(a)
+
 exists x.A(x)
 1
 all x.A(x) | exists x.A(x)
 ```
-
-Obs: no arquivo de entrada não há problema em colocar quebras de linha entre um tableaux e outro, mas na entrada direta há, em caso de dúvida quebras de linha significam que algo terminou (uma afirmação, por exemplo) e não deve haver quebras de linha que resultem em linhas vazias.

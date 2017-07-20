@@ -9,7 +9,12 @@ def input_func(file=False,read=read_expr,input_msg=None):
 	if input_msg is None:
 		input_msg = ''
 
-	read_file_line = lambda: read(file.readline().strip())
+	def read_file_line():
+		val = ''
+		while val == '':
+			val = file.readline().strip()
+		return read(val)
+
 	read_input = lambda: read(input(input_msg).strip())
 
 	while True:
